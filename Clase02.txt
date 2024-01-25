@@ -1,0 +1,64 @@
+//  C  L  A  S  E  0  2
+//Variables
+// let numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
+// console.log('Valor de intento:', numeroUsuario);
+// let numeroSecreto = 6;
+// console.log('Resultado de la comparación:', numeroUsuario == numeroSecreto);
+
+// /*
+// Este código realiza
+// la comparación
+// */
+// if (numeroUsuario == numeroSecreto) {
+//     //Acertamos, fue verdadera la condición
+//     alert("Acertaste, el número es: " + numeroUsuario);
+// } else {
+//     //La condición no se cumplió
+//     console.log('Valor del número secreto:', numeroSecreto);
+//     alert('Lo siento, no acertaste el número');
+// }
+//Template Strings
+/*
+    Para combinar valores literales con variables
+    en JavaScript se utiliza la sintaxis ${} dentro de 
+    comillas invertidas ` tutextoaqui `
+    Dentro de las llaves además de llamar variables, podemos colocar
+    código JavaScript
+        alert(`Acertaste, el número es: ${numeroUsuario}`);
+*/
+
+//Concatenar
+/*
+    También podemos concatenar texto y variables con el operador +
+        alert("Acertaste, el número es: " + numeroUsuario);
+*/
+
+//Live Server
+
+/*
+    Visual estudio tiene extensiones que nos facilita el trabajo, entonces
+    Instalamos live server para tener recarga automática cuando
+    realizamos actualizaciones en el código
+*/
+
+//  D  E  S  A  F  I  O  S  02
+/* 
+    1.Pregunta al usuario qué día de la semana es. Si la respuesta es "Sábado" o "Domingo", muestra "¡Buen fin de semana!". De lo contrario, muestra "¡Buena semana!".
+    2.Verifica si un número ingresado por el usuario es positivo o negativo. Muestra una alerta informativa.
+    3.Crea un sistema de puntuación para un juego. Si la puntuación es mayor o igual a 100, muestra "¡Felicidades, has ganado!". En caso contrario, muestra "Intenta nuevamente para ganar.".
+    4.Crea un mensaje que informe al usuario sobre el saldo de su cuenta, utilizando un template string para incluir el valor del saldo.
+    5.Pide al usuario que ingrese su nombre mediante un prompt. Luego, muestra una alerta de bienvenida usando ese nombre.
+
+*/  
+/*
+    alert("Desafio 2.1");
+    let dia = prompt("¿Qué día de la semana es?");
+
+    if (dia == "sabado" || dia == "domingo"){
+        alert("¡Buen fin de semana!");
+    }else{
+        alert("¡Buena semana!");
+    }
+    alert("Desafio 2.2");
+*/
+    

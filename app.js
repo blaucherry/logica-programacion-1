@@ -1,53 +1,35 @@
+//  C  L  A  S  E F I N A L
 
-// alert('Hola Mundo');
-// //prompt("Me indicas un número por favor:");
-// //3 Palabras reservadas para indicar como se va a comportar el cuadro del prompt
-// //let, cons y var
-// //vamos a usar el var
-// //CamelCase "nombreDeVariable", el nombre de las variables debe tener sentido
-// let numUsuario = prompt("Me indicas un número por favor:");
-// //Almacenamos la variable en la consola
-// console.log(numUsuario); //Javascript es sensible a las mayúsculas
+//Variables
+let numeroSecreto = 0 ;
+let numeroUsuario = 0;
+let numeroIntentos = 1;
+//let pluralIntento = "intento";
+let maximosIntentos = 3;
 
-//Agrupar variables es una buena práctica de programación
-// let numSecreto = 6;
-// let numUsuario = prompt("Me indicas un número por favor:");
+console.log(numeroSecreto);
+numeros = parseInt(prompt("Me indicas el rango máximo de números a generar partiendo de 1:"));
+numeroSecreto = Math.floor(Math.random()*numeros)+1; 
+while(numeroUsuario != numeroSecreto){
+    numeroUsuario = parseInt(prompt("Me indicas un número entre 1 y "+ numeros +" por favor:"));
 
+    console.log(typeof(numeroUsuario));
 
+    if (numeroUsuario == numeroSecreto) {
+        alert("Acertaste, el número es: " + numeroUsuario+". Lo hiciste en "+ numeroIntentos + " "+ (numeroIntentos == 1 ? "intento" : "intentos")  +".");
+    } else {
+        if (numeroUsuario > numeroSecreto){
+            alert("El número secreto es menor");
 
-// console.log(numUsuario); //Javascript es sensible a las mayúsculas
-
-// if (numUsuario == numSecreto){
-//     alert("Acertaste el número");
-// }
-
-// Muestra una alerta con el mensaje "¡Bienvenida y bievenido a nuestro sitio web!".
-// Declara una variable llamada nombre y asígnale el valor "Luna".
-// Crea una variable llamada edady asígnale el valor 25.
-// Establece una variable numeroDeVentas y asígnale el valor 50.
-// Establece una variable saldoDisponible y asígnale el valor 1000.
-// Muestra una alerta con el texto "¡Error! Completa todos los campos".
-// Declara una variable llamada mensajeDeError y asígnale el valor "¡Error! Completa todos los campos". Ahora muestra una alerta con el valor de la variable mensajeDeError .
-// Utiliza un prompt para preguntar el nombre del usuario y almacénalo en la variable nombre .
-// Pide al usuario que ingrese su edad usando un prompt y almacénala en la variable edad.
-// Ahora, si la edad es mayor o igual a 18, muestra una alerta con el mensaje "¡Puedes obtener tu licencia de conducir!".
-
-alert("¡Bienvenida y bienvenido a nuestro sitio web!");
-
-let nombre = "Luna";
-let edady = 25;
-let numeroDeVentas = 50;
-let saldoDisponible = 1000;
-
-let mensajeDeError = "¡Error! Completa todos los campos.";
-
-nombre = prompt("Me indicas tu nombre por favor");
-edady = prompt("Me indicas tu edad por favor");
-
-if(edady >= 18){
-    alert("¡Puedes obtener tu licencia de conducir!");
-}else{
-    alert(mensajeDeError);
+        }  else {
+            alert("El número secreto es mayor");
+        }
+        //Incrementamos el contador cuando no acierta
+        numeroIntentos++;
+        //pluralIntento = "intentos";
+        if (numeroIntentos > maximosIntentos){
+            alert("Llegaste al número máximo de "+ maximosIntentos  + " "+ (numeroIntentos == 1 ? "intento" : "intentos")+ " el número era: "+numeroSecreto  );
+            break; 
+        }
+    }  
 }
-
-

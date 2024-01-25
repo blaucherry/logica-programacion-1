@@ -1,0 +1,52 @@
+
+//  C  L  A  S  E  0  3
+
+//Variables
+let numeroSecreto = 6;
+let numeroUsuario = 0;
+let numeroIntentos = 1;
+let pluralIntento = "intento";
+while(numeroUsuario != numeroSecreto){
+    numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
+
+    if (numeroUsuario == numeroSecreto) {
+        alert("Acertaste, el número es: " + numeroUsuario+". Lo hiciste en "+ numeroIntentos + " "+pluralIntento +".");
+    } else {
+        if (numeroUsuario > numeroSecreto){
+            alert("El número secreto es menor");
+
+        }  else {
+            alert("El número secreto es mayor");
+        }
+        //Incrementamos el contador cuando no acierta
+        numeroIntentos++;
+        pluralIntento = "intentos"
+    }  
+
+}
+
+//  D  E  S  A  F  I  O  S  03
+/* 
+    1.Crea un contador que comience en 1 y vaya hasta 10 usando un bucle 'while'. Muestra cada número.
+    2.Crea un contador que comience en 10 y vaya hasta 0 usando un bucle 'while'. Muestra cada número.
+    3.Crea un programa de cuenta progresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
+    4.Crea un programa de cuenta progresiva. Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
+*/  
+
+//Operadores Lógicos
+
+/*
+    AND (&&) dos condiciones y evalua si ambas son verdaderas
+    OR  (||) dos condiciones y evalua si almeos una de ellas es verdadera
+    
+    ==	Igual	A == B	Verdadero si A es igual a B
+    !=	Diferente	A != B	Verdadero si A no es igual a B
+    <	Menor que	A < B	Verdadero si A es menor que B
+    >	Mayor que	A > B	Verdadero si A es mayor que B
+    <=	Menor o igual	A <= B	Verdadero si A es menor o igual a B
+    >=	Mayor o igual	A >= B	Verdadero si A es mayor o igual a B
+    &&	Y / AND	(A > B) && (B == C)	Verdadero si A es mayor que B y B es igual a C
+    ||	O / OR	(A > B) || (B == C)	Verdadero si A es mayor que B o B es igual a C
+    !	NEGACIÓN	!(A == B)	Verdadero si A NO es igual a B
+
+*/
